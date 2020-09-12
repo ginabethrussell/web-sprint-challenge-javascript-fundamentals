@@ -46,3 +46,4 @@ function summation(param){
   return counter();
 }
 console.log(summation(4));
+// console.log(summation(10));
