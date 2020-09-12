@@ -26,7 +26,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-Both of these are array methods and iterate over each item in an array. forEach returns undefined and so does not create anything new. map creates a new array by using some callback function on each array item.
+Both of these are array methods and iterate over each item in an array, passing in a callback, and neither mutate the original array. forEach returns undefined and so does not create anything new on its own. .map creates a new array by using some callback function on each array item.
 
 2. Explain the difference between a callback and a higher order function.
 A callback function is a function that is passed as an argument into another function. A higher order function is a function that receives a callback function as one of its parameters.
