@@ -26,14 +26,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+Both of these are array methods and iterate over each item in an array. forEach returns undefined and so does not create anything new. map creates a new array by using some callback function on each array item.
 
 2. Explain the difference between a callback and a higher order function.
+A callback function is a function that is passed as an argument into another function. A higher order function is a function that receives a callback function as one of its parameters.
 
 3. What is closure?
+A closure occurs when a function is defined inside another function. The child function can reach out to use the variables defined in the parent function but the parent can not reach into the child. This is powerful when the child function is returned. It allows the variables from the parent function to exist after the parent function is done. It makes the variable private to the child and can be updated and invoked when needed.
 
 4. Describe the four rules of the 'this' keyword.
+The first principle is the window or global binding. This is the meaning of this when it is not otherwise defined. The second is implicit binding. This is most use cases and occurs when a dot method is used. This becomes whatever is on the left of the dot. The third use is new binding. This occurs in an object constructor function when the object is created and returned and is bound to this. The last is explicit binding and occurs when this is explicitly given a value. This is implemented in Prototype Inheritance patterns to pass the child object to the parent constructor when setting inherited attributes.
 
 5. Why do we need super() in an extended class?
+Super is needed inside an extended class when it is inherited to connect the child to the parent class constructor. This is done first inside the child constructor before setting unique attributes for the child class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
